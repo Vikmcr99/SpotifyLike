@@ -1,4 +1,5 @@
-﻿using StreamingApp.Domain.Transaction;
+﻿using StreamingApp.Domain.Streaming;
+using StreamingApp.Domain.Transaction;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -62,6 +63,34 @@ namespace StreamingApp.Domain.Account
 
             });
 
+        }
+
+        public void FavoriteMusic(Music music, string playlistName = "Favorites")
+        {
+            var playlist = this.Playlists.FirstOrDefault(x => x.Name == playlistName);
+
+            if(playlist == null)
+            {
+                throw new Exception("Playlist not found");
+            }
+            playlist.Musics.Add(music);
+        }
+
+        public void UnfavoriteMusic(Music music, string playlistName = "Favorites")
+        {
+            var playlist = this.Playlists.FirstOrDefault(x => x.Name == playlistName);
+
+            if (playlist == null)
+            {
+                throw new Exception("Playlist not found");
+            }
+
+            var musicFav = playlist.Musics.FirstOrDefault(x => x.Id == music.Id);
+
+            if (musicFav == null)
+                throw new Exception("Music not found");
+
+            playlist.Musics.Remove(music);
         }
     }
 }

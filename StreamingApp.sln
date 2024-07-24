@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamingApp.Domain", "StreamingApp.Domain\StreamingApp.Domain.csproj", "{BB32F547-1C3D-47DC-B13A-9045971AEE92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StreamingApp.Domain", "StreamingApp.Domain\StreamingApp.Domain.csproj", "{BB32F547-1C3D-47DC-B13A-9045971AEE92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamingApp.Repository", "StreamingApp.Repository\StreamingApp.Repository.csproj", "{F0A90ADC-6B77-47BE-9EE0-00F4A7ED4690}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamingApp.Application", "StreamingApp.Application\StreamingApp.Application.csproj", "{54FDAB90-C6EB-4BB4-AAC6-CBE77F08DD12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamingApp.API", "StreamingApp.API\StreamingApp.API.csproj", "{1CABD013-AF89-411B-8618-9FC8BED955C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{BB32F547-1C3D-47DC-B13A-9045971AEE92}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB32F547-1C3D-47DC-B13A-9045971AEE92}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB32F547-1C3D-47DC-B13A-9045971AEE92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0A90ADC-6B77-47BE-9EE0-00F4A7ED4690}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0A90ADC-6B77-47BE-9EE0-00F4A7ED4690}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0A90ADC-6B77-47BE-9EE0-00F4A7ED4690}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0A90ADC-6B77-47BE-9EE0-00F4A7ED4690}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54FDAB90-C6EB-4BB4-AAC6-CBE77F08DD12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54FDAB90-C6EB-4BB4-AAC6-CBE77F08DD12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54FDAB90-C6EB-4BB4-AAC6-CBE77F08DD12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54FDAB90-C6EB-4BB4-AAC6-CBE77F08DD12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CABD013-AF89-411B-8618-9FC8BED955C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CABD013-AF89-411B-8618-9FC8BED955C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CABD013-AF89-411B-8618-9FC8BED955C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CABD013-AF89-411B-8618-9FC8BED955C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
